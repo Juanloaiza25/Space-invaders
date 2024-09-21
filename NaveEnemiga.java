@@ -14,6 +14,8 @@ public class NaveEnemiga {
     private int alto;
     private boolean visible;
 
+    Sound ExplosionSound = new Sound("./Assets/invaderkilled.wav");
+
     // Constructor
 
     public NaveEnemiga(int x, int y, int ancho, int alto, boolean visible) {
@@ -68,8 +70,17 @@ public class NaveEnemiga {
     }
 
     public boolean colision(Disparo disparo) {
-        return false;
+        if (disparo.getX() >= this.x && disparo.getX() <= this.x + this.ancho &&
+            disparo.getY() >= this.y && disparo.getY() <= this.y + this.alto) {
+            
+            // Reproducir sonido de explosión
+            ExplosionSound.restart();
+            this.visible = false; // Marcar la nave como no visible
+            return true; // Colisión detectada
+        }
+        return false; // No hay colisión
     }
+    
 
     
 }
