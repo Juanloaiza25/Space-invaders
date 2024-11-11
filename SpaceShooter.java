@@ -99,7 +99,7 @@ public class SpaceShooter {
 
             // Mover las naves enemigas
             for (NaveEnemiga naveEnemiga : navesEnemigas) {
-                naveEnemiga.setX(naveEnemiga.getX() + direccion * 100);
+                naveEnemiga.setX(naveEnemiga.getX() + direccion * 5);
                 if (naveEnemiga.getX() <= 0 || naveEnemiga.getX() + anchoNaveEnemiga >= anchoPanel - 30) {
                     cambiarDireccion = true;
                 }
