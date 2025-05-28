@@ -45,7 +45,8 @@ java SpaceShooter
 ## 📄 Licencia
 Este proyecto se distribuye bajo la Licencia MIT.
 
-#English Version
+# English Version
+---
 
 # 👾 Space Invaders (Java Clone)
 
