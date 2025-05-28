@@ -42,7 +42,7 @@ java SpaceShooter
 
 ---
 
-##📄 Licencia
+## 📄 Licencia
 Este proyecto se distribuye bajo la Licencia MIT.
 
 #English Version
@@ -91,5 +91,5 @@ java SpaceShooter
 
 ---
 
-##📄 License
+## 📄 License
 This project is distributed under the MIT License.
