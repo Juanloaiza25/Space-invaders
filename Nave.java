@@ -55,6 +55,10 @@ public class Nave extends KeyAdapter {
             disparos.add(new Disparo(this.x + this.ancho / 2 - 5, this.y - 10, 10, 20, 10));
             disparando = true;
 
+             Sound disparoSound = new Sound("./Assets/disparo.wav");
+            disparoSound.setVolume(SpaceShooter.volumen / 100.0); // Usa el volumen global
+            disparoSound.play();
+
             DisparoSound.restart();
         }
         else {
